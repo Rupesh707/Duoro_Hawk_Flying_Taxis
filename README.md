@@ -63,3 +63,5 @@ The data would flow from the fleet vehicles to Amazon S3, then to Amazon Kinesis
 - Amazon SNS sends notifications back to connected vehicle
 
 It's worth mentioning that this is a high-level illustration, specific details and the design of the dataflow could be adjusted based as per specific requirements of the system.
+
+[Source](https://github.com/awslabs/aws-fleet-predictive-maintenance)
