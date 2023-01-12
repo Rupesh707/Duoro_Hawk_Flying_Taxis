@@ -38,6 +38,7 @@ The model is trained with the first 2,500 trips and tested over 5,000 following 
 
 [![Echo State Network](https://www.linkpicture.com/q/ESN-Model.png)](https://www.linkpicture.com/view.php?img=LPic63bf7067ea4791208584718)
 
+
 ## AWS Fly Connect - A predictive fleet management services
 
 
@@ -45,16 +46,20 @@ The model is trained with the first 2,500 trips and tested over 5,000 following 
 
 The data would flow from the fleet vehicles to Amazon S3, then to Amazon Kinesis, where it would be processed by Lambda and stored in DynamoDB, also it would be indexed and visualized using Amazon Elasticsearch Service. If certain conditions are met, SNS will send notifications accordingly.
 
-- The fleet vehicles would be equipped with GPS and sensor devices that would collect data such as location, speed, and sensor readings.
-- The data would be sent to Amazon S3, where it would be stored.
-- The data would then be streamed in real-time to Amazon Kinesis.
-- Amazon Lambda functions would be triggered by the data stream, and they would perform tasks such as calculating vehicle speeds and distances traveled.
-- The processed data would be stored in Amazon DynamoDB.
-- The data would also be indexed and visualized using Amazon Elasticsearch Service, and can be queried by the system users.
-- If certain conditions are met, Amazon SNS would send notifications, such as an email or SMS message, to the appropriate parties.
-
-It's worth mentioning that this is a high-level illustration, specific details and the design of the dataflow could be adjusted based on the specific requirements of the system.
-
-
+### AWS Fly connect soultions
 
 [![AWS Fly Connect](https://www.linkpicture.com/q/AWSFly-Connect.jpg)](https://www.linkpicture.com/view.php?img=LPic63bf78005901c158239597)
+
+
+- An extract will be created from the Fleet Management system containing vehicle data and sensor logs.
+- Amazong SageMaker model will be deployed after model is trained.
+- Connected vehicle sends sensor logs to IoT Core as shown (alternarively via HTTP interface)
+- Sensor logs are persisted via Amazon Kinesis
+- Sensor logs are sent to Lambda for analysis
+- Lambda uses predictions model on sensor logs
+- Predictions are persisted in S3
+- Aggregate results are displayed on Amazon QuickSight dashboard
+- Real-time results are displayed on Amazon QuickSight dashboard
+- Amazon SNS sends notifications back to connected vehicle
+
+It's worth mentioning that this is a high-level illustration, specific details and the design of the dataflow could be adjusted based as per specific requirements of the system.
