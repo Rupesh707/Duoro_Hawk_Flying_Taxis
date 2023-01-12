@@ -40,6 +40,9 @@ The model is trained with the first 2,500 trips and tested over 5,000 following 
 
 ## AWS Fly Connect - A predictive fleet management services
 
+
+[![AWS Fly](https://www.linkpicture.com/q/BMW-2.jpg)](https://www.linkpicture.com/view.php?img=LPic63bf853809b721181603192)
+
 The data would flow from the fleet vehicles to Amazon S3, then to Amazon Kinesis, where it would be processed by Lambda and stored in DynamoDB, also it would be indexed and visualized using Amazon Elasticsearch Service. If certain conditions are met, SNS will send notifications accordingly.
 
 - The fleet vehicles would be equipped with GPS and sensor devices that would collect data such as location, speed, and sensor readings.
@@ -51,9 +54,6 @@ The data would flow from the fleet vehicles to Amazon S3, then to Amazon Kinesis
 - If certain conditions are met, Amazon SNS would send notifications, such as an email or SMS message, to the appropriate parties.
 
 It's worth mentioning that this is a high-level illustration, specific details and the design of the dataflow could be adjusted based on the specific requirements of the system.
-
-
-[![AWS Fly Connect](https://www.linkpicture.com/q/Skyfleet.png)](https://www.linkpicture.com/view.php?img=LPic63bf8333866ab1740850097)
 
 
 
