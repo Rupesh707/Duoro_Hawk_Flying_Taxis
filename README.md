@@ -1,6 +1,6 @@
 # Duoro_Hawk_Flying_Taxis
 
-[![image](https://www.linkpicture.com/q/BMW-1.jpg)](https://www.linkpicture.com/view.phpimg=LPic63bf680209b2c372151899)
+[![image](https://www.linkpicture.com/q/BMW-1.jpg)](https://github.com/Rupesh707/Duoro_Hawk_Flying_Taxis/blob/Master/Duro_Hawk.ipynb)
 
 
 #### 1. REPOSITORY STRUCTURE 
@@ -25,9 +25,9 @@ The code is structured into distinct files & folders:
 - The best parameters found by the grid search are:
 Nr = 250 sigma =0.4 lambda =0.01 Leak rate = 1 Connectivity = 30%
 
-The top model gives a
-- validation error of km 1.016 (MHD), and a
-- train error of km 0.801 (MHD).
+The top model after training :
+- Validation error of km 1.016 (MHD).
+- Train error of km 0.801 (MHD).
 
 It is trained with the first 2,500 trips and tested over the 5,000 following ones.We can also see how the network predicts the destination as the taxi ride goes on, the green points are the predicted destination as we go through the real trajectory (red points). The X stands for the predicted final destination of which we evaluate the MHD.
 
