@@ -15,7 +15,7 @@ The code is structured into distinct files & folders:
 - Esn_class.py - Has general purpose methods which do not rely on a given task
 - Esn_loaddata.py - Dataloader
 - Esn_mackleyglass.py - Mackey-Glass (τ=17) time series for benchmarking
-- EsnModelSelection.py - Optimizer for model building neural nets
+- EsnModelSelection.py - Optimizer for building neural nets
 - esnTrainAndTestUtils.py - Helper for train & test
 - utils.py - Helper functions
 
@@ -30,6 +30,8 @@ The top model after training :
 - Train error of km 0.801 (MHD).
 
 The model is trained with the first 2,500 trips and tested over 5,000 following ones.We can also see how the network predicts the destination as the taxi ride goes on, the green points are the predicted destination as we go through the real trajectory (red points). The X stands for the predicted final destination of which we evaluate the Mean Haversine Distance(MHD).
+
+### Partial trajectory prediction
 
 [![](https://www.linkpicture.com/q/Traj.png)](https://www.linkpicture.com/view.php?img=LPic63bf73f456cde368928031)
 
