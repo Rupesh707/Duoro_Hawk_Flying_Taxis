@@ -1,6 +1,6 @@
 # Duoro_Hawk_Flying_Taxis
 
-[![image](https://www.linkpicture.com/q/BMW-1.jpg)](https://github.com/Rupesh707/Duoro_Hawk_Flying_Taxis/blob/Master/Duro_Hawk.ipynb)
+[![image](https://www.linkpicture.com/q/Duoro_Hawk.jpeg)](https://github.com/Rupesh707/Duoro_Hawk_Flying_Taxis/blob/Master/Duro_Hawk.ipynb)
 
 
 #### 1. REPOSITORY STRUCTURE 
